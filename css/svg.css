@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+body {
+    text-align: center;
+}
+
+section {
+    display: inline-block;
+    margin: 10px;
+}
+
+svg {
+    display: inline-block;
+    background: url(../img/grid.gif);
+    width: 600px;
+    height: 400px;
+    box-shadow: 0 0 10px 1px #ccc;
+}
+
+.r1 {
+    width: 200px;
+    height: 200px;
+    fill: coral;
+    fill-opacity: .5;
+    stroke: #000;
+    stroke-opacity: .3;
+    stroke-width: 10px;
+}
+
+.r2 {
+    width: 200px;
+    height: 200px;
+    fill: cornflowerblue;
+    fill-opacity: .7;
+    stroke: purple;
+    stroke-opacity: .3;
+    stroke-width: 10px;
+}
+
+.c1 {
+    fill: #f7caca;
+    stroke: #137ca1;
+    stroke-width: 10px;
+    stroke-opacity: .7;
+}
+
+.c2 {
+    fill: #d94f70;
+    fill-opacity: .9;
+}
+
+.e1 {
+    fill: #74d1ea;
+}
+
+.e2, .e3, .e4, .e5, .e6, .e7 {
+    fill: none;
+    stroke: #fff;
+}
+
+.e_1, .e_2, .e_3, .e_4, .e_5, .e_6 {
+    fill: none;
+    stroke: #fff;
+}
+
+.l1 {
+    stroke: #2c2c2c;
+    stroke-width: 10px;
+}
+
+.l2 {
+    stroke: #9c9c9c;
+    stroke-width: 10px;
+}
+
+.rect1 {
+    width: 400px;
+    height: 250px;
+    fill: #000;
+    fill-opacity: .8;
+    stroke: #000;
+    stroke-width: 10px;
+}
+
+.line1 {
+    stroke: #3c3c3c;
+    stroke-width: 3px;
+}
+
+.line2 {
+    stroke: #fff;
+    stroke-width: 3px;
+    stroke-opacity: .3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

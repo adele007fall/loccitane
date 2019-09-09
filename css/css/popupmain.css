@@ -1,0 +1,144 @@
+@charset "utf-8";
+
+*{
+	margin: 0;
+	padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+	text-align: center;
+}
+
+header {
+    margin: 0 auto;
+}
+
+header h1 {
+    line-height: 600px;
+	font-weight: 900;
+	font-size: 80px;
+    opacity: 0.5;
+}
+
+header ul {
+    text-align: center;
+    padding-top: 20px;
+}
+
+header li {
+    display: inline-block;
+    margin: 0 30px;
+    width: 100px;
+    height: 30px;
+}
+
+header li a {
+    color: white;
+    text-shadow: 2px 2px black;
+    font-size: 15px;
+}
+
+h2 {
+    margin: 20px 0;
+    opacity: 0.5;
+    
+}
+
+header > div:nth-of-type(2) {
+    width: 200px;
+    height: 60px;
+    background: gray;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+header > div:nth-of-type(2) a {
+    line-height: 60px;
+    font-size: 20px;
+    letter-spacing: 9px;
+    font-weight: 900;
+    color: beige;
+}
+
+header p {
+    margin-bottom: 5px;
+    color: gray;
+}
+
+.bgSlider {
+    height: 700px;
+	background-image: url(../img/main1.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+    transition-delay: 300ms;
+}
+
+.showing {
+	opacity: 1;
+	transform: translateX(0);
+}
+
+section .inner {
+	width: 1260px;
+	margin: 0 auto;
+}
+
+section > div > div {
+	float: left;
+	width: 400px;
+	height: 300px;
+	margin: 10px;
+	background: url('../img/insta1.jpg') no-repeat center;
+	background-size: cover;
+	opacity: 0;
+	transition: all 0.3s ease-in;
+	transform: translateX(40px);
+}
+
+section > div > div >  a {
+	display: block;
+	height: 300px;
+}
+
+section > div > div:nth-of-type(2) {
+	background-image: url('../img/insta2.jpg');
+}
+
+section > div > div:nth-of-type(3) {
+	background-image: url('../img/insta3.jpg');
+}
+
+section > div > div:nth-of-type(4) {
+	background-image: url('../img/insta4.jpg');
+}
+
+section > div > div:nth-of-type(5) {
+	background-image: url('../img/insta5.jpg');
+}
+section > div > div:nth-of-type(6) {
+	background-image: url('../img/insta6.jpg');
+}
+
+section > div > div:nth-of-type(7) {
+	background-image: url('../img/insta7.jpg');
+}
+
+section > div > div:nth-of-type(8) {
+	background-image: url('../img/insta8.jpg');
+}
+
+section > div > div:nth-of-type(9) {
+	background-image: url('../img/insta9.jpg');
+}
+
+section > div > div:nth-of-type(10) {
+	background-image: url('../img/insta10.jpg');
+}
+
+section > div > div:nth-of-type(11) {
+	background-image: url('../img/insta11.jpg');
+}
+

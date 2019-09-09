@@ -1,0 +1,397 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    font-size: 0.625em;
+}
+
+body {
+    font-family: arial, sans-serif;
+}
+
+.blind {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+.clear::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.inner {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* header */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.4);
+    z-index: 2;
+}
+
+h1 {
+    float: left;
+    width: 150px;
+}
+
+h1 a {
+    display: block;
+    width: 100%;
+    margin:  30px 0;
+}
+
+button {
+    float: right;
+    width: 30px;
+    height: 20px;
+    margin: 30px 0;
+    border: none;
+    background: none;
+}
+
+button span {
+    display: block;
+    height: 4px;
+    border-radius: 4px;
+    background: #000;
+}
+
+button span:nth-child(2) {
+    margin: 3px 0;
+}
+
+nav {
+    display: none;
+    position: absolute;
+    top: 94px;
+    left: 0;
+    width: 100%;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav ul > li {
+    background: rgba(0,0,0,0.7);
+}
+
+nav ul > li:hover, nav ul > li:active {
+    background: rgba(255,255,255,0.8);
+}
+
+nav ul > li > a {
+    display: block;
+    font-size: 1.5rem;
+    color: #fff;
+    line-height: 65px;
+}
+
+nav ul > li > a:hover, nav ul > li > a:active {
+    color: #000;
+}
+
+/* visual */
+
+.visual div:first-child {
+    height: 700px;
+    margin-top: 94px;
+    background: url(../img/zucca_bg.jpg) no-repeat left top/cover ;
+}
+
+.visual div:last-child {
+    padding: 100px 5%;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.7;
+}
+
+/* section */
+
+.about div:first-of-type {
+    height: 800px;
+    background: url(../img/zucca00.jpg) no-repeat center/cover;
+    position: relative;
+}
+.about div:first-of-type span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40%;
+    height: 450px;
+    margin-left: -150px;
+    margin-top: -225px;
+    background: url(../img/zucca01.jpg) no-repeat center/cover;
+}
+
+.about div:last-of-type {
+    background: #fafaf2;
+}
+
+.about div:last-of-type b {
+    display: block;
+    margin: 100px 15% 0 15%;
+    font-size: 8.0rem;
+    color: black;
+}
+
+.about div:last-of-type i {
+    display: block;
+    margin: 20px 15% 0 15%;
+    font-size: 1.4rem;
+    line-height: 1.7;
+    font-style: 1.7;
+}
+
+.about div:last-of-type a {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    margin: 50px 0 100px 15%;
+    background: black;
+    color: white;
+    font-size: 1.5rem;
+    line-height: 50px;
+    text-align: center;
+}
+
+.project {
+    background: #e8efff;
+    
+}
+
+.project .inner {
+    width: 100%;
+}
+
+.project .inner div:first-child {
+    height: 600px;
+    background: url(../img/zucca04.jpg) no-repeat center/cover ;
+}
+
+.project .inner div:nth-of-type(2) {
+    height: 300px;
+    background: url(../img/zucca05.jpg) no-repeat center/cover ;
+}
+
+.project .inner div:nth-of-type(3) {
+    height: 300px;
+    background: url(../img/zucca11.jpg) no-repeat center/cover ;
+}
+
+.project .inner span {
+    display: block;
+    margin: 50px 0 0 5%;
+    padding-bottom: 50px;
+}
+
+.project .inner span b {
+    display: block;
+    font-size: 8.0rem;
+    color: white;
+}
+.project .inner span i {
+    display: block;
+    font-style: normal;
+    font-size: 1.4rem;
+}
+
+.project .inner span a {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    margin-top: 30px;
+    background: #000;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.4rem;
+}
+/* footer */
+footer {
+    background: #f5f5f3;
+    height: 300px;
+}
+
+footer h2 {
+    padding-top: 30px;
+    margin-bottom: 50px;
+    font-size: 3.0rem;
+}
+
+footer address span {
+    float: left;
+    display: block;
+    width: 50%;
+    font-size: 1.4rem;
+    font-style: normal;
+}
+
+footer address span b {
+    display: block;
+    display: block;
+    margin: 10px;
+    font-weight: normal;
+}
+
+@media screen and (min-width: 1024px) {
+    button {
+        display: none;
+    }
+    nav {
+        position: static;
+    }
+    nav ul {
+        text-align: right;
+    }
+    nav ul > li {
+        display:inline-block;
+        background: none;
+     }
+    
+    nav ul > li > a:hover, nav ul > li > a:active {
+        color: coral;
+    }
+    
+    nav ul > li >a {
+        padding: 0 20px;
+        line-height: 94px;
+    }
+    
+  nav ul > li:hover, nav ul > li:active {
+        background: none;
+    }
+    
+    .about div {
+        float: left;
+        width: 50%;
+        height: 800px;
+    }
+    
+    .project .inner {
+        position: relative;
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .project .inner div {
+        position: absolute;
+    }
+    
+    .project .inner div:first-child {
+        top: 50px;
+        right: 0;
+        width: 50%;
+        height: 600px;
+    }
+    .project .inner div:nth-child(2) {
+        top: 150px;
+        right: 50%;
+        width: 40%;
+        height: 300px;
+        margin-right: -200px;
+    }
+    .project .inner div:nth-child(3) {
+        bottom: 50px;
+        right: 15%;
+        width: 250px;
+        height: 300px;
+    }
+    .project .inner span {
+        display: inline-block;
+        margin: 500px 0 50px 5%;
+    }
+    
+    footer h2 {
+        margin-bottom: 50px; font-size: 3.0rem;
+    }
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

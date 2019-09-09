@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   font-size: 0.625em;
+} /* 1em = 16px ,  0.625em = 10px */
+
+a {
+    text-decoration: none;
+}
+
+/* 테이블 요소 사용 */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+th {
+    background: #333;
+    color: white;
+    font-weight: normal;
+    width: 20%;
+}
+
+span {
+    display: block;
+    
+}
+
+.time {
+    background: #bbb;
+}
+
+.time+td {
+    background: #bbb;
+    text-align: center;
+    color: white;
+}
+
+span:first-of-type a{
+    color: #bcbcbc;
+}
+
+span:nth-of-type(2) a {
+    color: #333;
+}
+
+span:nth-of-type(2):hover a {
+    color: #f7caca;
+    text-decoration: underline;
+}
+
+span:nth-of-type(2):active a {
+    color: #c74375;
+}
+
+span:last-of-type {
+    color: #dfdfdf;
+}
+
+@media screen and (max-width:767px) {
+    table, tbody, tr, th, td {
+        display: block;
+    }
+    thead {
+        position: absolute;
+        top: -999px;
+        left: -999px;
+    }
+    
+    tr th:first-child{
+        width: 100%;
+    }
+    
+    td {
+        position: relative;
+        height: 50px;
+        padding-left: 37%;
+    }
+    
+    td::before {
+        content: "TRACK A";
+        width: ;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 35%;
+        height: 100%;
+        line-height: 50px;
+        text-align: center;
+        background: #333;
+        color: #fff;
+    }
+    
+    td:nth-of-type(1)::before {
+        content: "TRACK A (4층 대회의실)"
+    }
+    td:nth-of-type(2)::before {
+        content: "TRACK B (3층 국제회의실)"
+    }
+    td:nth-of-type(3)::before {
+        content: "TRACK C (3층 글로리아홀)"
+    }
+    td:nth-of-type(4)::before {
+        content: "TRACK D (2층 중회의실)"
+    }
+    
+    .time+td {
+        padding: 0;
+        height: 30px;
+        line-height: 30px;
+    }
+    .time+td::before {
+        content: none;
+    }
+}
+
+/* div 요소사용 */
+
+.table {
+    display: table;
+    width: 100%;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    line-height: 30px;
+    text-align: center;
+}
+
+.table_head {
+    display: table-header-group;
+}
+
+.table_head .cell {
+    background: #333;
+    color: #ddf;
+}
+
+.row {
+    display: table-row;
+}
+
+.cell {
+    display: table-cell;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+/* 768px */
+
+h2 {
+    margin: 10px 0;
+}
+
+@media screen and (max-width: 767px) {
+    .table, .table_head, .row, .cell {
+        display: block;
+    }
+    
+    .table {
+        border: none;
+        border-left: none;
+    }
+    
+    .table_head {
+        position: absolute;
+        top: -999px;
+        left: -999px;
+    }
+    
+    .row {
+        margin-bottom: 20px;
+        border-top: 1px solid black;
+    }
+    
+    .cell {
+        position: relative;
+        text-align: left;
+        padding-left: 32%;
+    }
+    
+    .cell::before {
+        content: attr(date-label); /* 사용자 지정속성 */
+        background: #333;
+        color: white;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 30%;
+        text-align: center;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

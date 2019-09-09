@@ -1,0 +1,2370 @@
+@charset "utf-8";
+
+/* Spoqa Han Sans Web Font*/
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+
+/* nanaum barun gothic */
+
+@font-face {
+    font-family: nbgR;
+    src: url(fonts/NanumBarunGothic.eot?#iefix) format('embedded-opentype');
+    src: url(fonts/NanumBarunGothic.woff) format('woff') ;
+}
+
+/* reset */
+
+* {
+    list-style: none;
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+hr {
+    display: none;
+}
+
+h1 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    background: none;
+    text-indent: -9999px;
+}
+
+img {
+    border: none;
+}
+
+html {
+    font-size: 0.625em;
+}
+
+body {
+    font-family: Arial, "맑은 고딕", sans-serif;
+    line-height: 1;
+}
+
+.clear::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.blind {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+.pc {
+    display: none;
+}
+
+/* header */
+
+.navWrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75px;
+    background: #ffffff;
+    z-index: 2;
+}
+
+/* 로고와 버튼은 고정 */
+
+h1 {
+    position: absolute;
+    top: 21px;
+    left: 50%;
+    margin-left: -45px;
+    width: 90px;
+}
+
+h1 img {
+    width: 100%;
+}
+
+.searchWrap > form > button {
+    position: absolute;
+    top: 27px;
+    left: 4.666%;
+    width: 20px;
+    height: 20px;
+    background: url(../img/cjw-icon-search1.png) no-repeat center/contain ;
+}
+
+.searchOn {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    text-align: center;
+}
+
+.searchOn .close {
+    color: #959595;
+    font-size: 1.7rem;
+}
+
+.searchOn input {
+    width: 66.666%;
+    height: 32px;
+    margin: 22px 2.133% 0;
+    padding: 11px;
+    border: none;
+    background: #eeeeee;
+    border-radius: 3px;
+    color: #000;
+    font-size: 1.6rem
+}
+
+.searchOn button {
+    width: 45px;
+    height: 32px;
+    border-radius: 3px;
+    background: #777 url(../img/cjw-icon-search2.png) no-repeat center/15px;
+    vertical-align: bottom;
+}
+
+.navBtn {
+    position: absolute;
+    top: 29px;
+    right: 4.666%;
+    width: 26px;
+    height: 18px;
+}
+
+.navBtn span {
+    display: block;
+    height: 4px;
+    border-radius: 5px;
+    background: #000;
+}
+
+.navBtn span:nth-of-type(2) {
+    margin: 4px 0; 
+}
+
+header nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+}
+
+.navInner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 67.733%; /* 508px */
+    height: 100%;
+    padding-top: 31px;
+    background: #fff;
+}
+
+.navInner strong {
+    display: block;
+    width: 83.070%;
+    margin: 0 7.086% 24px 7.086%;
+}
+
+.navInner strong span {
+    width: 61px;
+    height: 22px;
+    float: left;
+}
+
+.navInner strong span a {
+    display: block;
+    height: 100%;
+    background: url(../img/cjw-logo-header.png) no-repeat center/cover;
+    text-indent: -9999px;
+}
+
+.navInner strong > a {
+    float: right;
+    color: #02b5d6;
+    font-size: 1.3rem;
+    line-height: 22px;
+}
+
+.navInner .right {
+    display: none;
+}
+
+.navInner ul {
+    width: 83.070%;
+    margin-left: 7.283%; 
+    border-top: 2px solid #595959;
+}
+
+.navInner ul > li > a {
+    position: relative;
+    display: block;
+    height: 59px;
+    line-height: 59px;
+    padding-left: 4.502%;
+    border-bottom: 1px solid #747474;
+    font-size: 1.7rem;
+    color: #595959;
+}
+
+/* open */
+
+.navInner ul > li:last-child.open > a {
+    border-bottom: 1px solid #595959;
+}
+
+.navInner ul > li.open+li > a {
+    border-top: 1px solid #747474;
+}
+
+.navInner ul > li:last-child > a {
+    border-bottom: none;
+}
+
+.navInner ul > li:last-of-type > a {
+    border-bottom: none;
+}
+
+.navInner ul > li > a span {
+    position: absolute;
+    top: 50%;
+    right: 2.843%; /* 12-422*100 */
+    width: 15px;
+    height: 8px;
+    margin-top: -4px;
+    background: url(../img/cjw-arrow-nav-bottom.png) no-repeat center/contain;
+}
+
+.navInner ul > li.open > a span {
+    background-image: url(../img/cjw-arrow-nav-top.png);
+}
+
+.navInner .wrap {
+    display: none;
+}
+
+.navInner .wrap.open {
+    display: block;
+}
+
+.navInner ol {
+    background: #f8f8f8;
+}
+
+.navInner ol li {
+    width: 89.573%;
+    margin-left: 4.502%;
+    border-bottom: 1px solid #cfcfcf;
+}
+
+.navInner ol:last-child li:last-child {
+    border-bottom: none;
+}
+
+.navInner ol li a {
+    height: 45px;
+    padding-left: 5.026%;
+    line-height: 45px;
+    color: #747474;
+    font-size: 1.4rem;
+}
+
+.navInner > a {
+    display: block;
+    position: relative;
+    height: 58px;
+    background: #02b5d6;
+    padding-left: 10.625%;
+    color: white;
+    font-size: 1.7rem;
+    line-height: 58px;
+    border-top: 2px solid rgba(255,255,255,0.5);
+}
+
+.navInner > a:first-of-type {
+    border-top: none;
+}
+
+.navInner > a span {
+    position: absolute;
+    top: 14px;
+    right: 12.322%;
+    width: 27px;
+    height: 27px;
+    background:  url(../img/cjw-icon-login.png) no-repeat center/contain;
+}
+
+.navInner > a:last-child span {
+    background-image: url(../img/cjw-icon-phone.png);
+}
+
+/* visual */
+
+.visual {
+    width: 100%;
+    height: 550px;
+    margin-top: 75px;
+    padding-top: 172px;
+    text-align: center;
+    background: url(../img/cjw-bg-main.jpg) no-repeat center/cover;
+}
+
+.visual div:first-child ~ div{
+    display: none;
+}
+
+.visual i {
+    display: block;
+    margin-bottom: 15px;
+    color: #fff;
+    font-size: 1.8rem;
+    font-style: normal;
+}
+
+.visual i span:first-child {
+    color: #80eafe;
+}
+.visual i span:last-child {
+    color: #fff857;
+}
+
+.visual b{
+    color: #fff;
+    font-size: 4.3rem;
+    font-weight: normal;
+}
+
+.visual p {
+    width: 79.466%;
+    margin: 20px auto 32px auto;
+    color: #fff;
+    font-size: 1.4rem;
+    line-height: 1.285;
+}
+
+.visual a {
+    display: inline-block;
+    width: 311px;
+    height: 50px;
+    color: #fff;
+    background: rgba(0,0,0,0.4);
+    border: 2px solid rgba(255,255,255,0.6);
+    font-size: 1.5rem;
+    line-height: 46px;
+    border-radius: 3px;
+}
+
+.section {
+    height: 50px;
+    background: #fff;
+    border-bottom: 1px solid #f8f8f8;
+    text-align: center;
+}
+
+.section.on {
+    position: fixed;
+    top: 75px;
+    left: 0;
+    width: 100%;
+}
+
+.section li {
+    display: inline-block;
+    width: 24%;
+}
+
+.section a {
+    width: 100%;
+    line-height: 50px;
+    color: #959595;
+    font-size: 1.3rem;
+}
+
+.section li.on a{
+    color: #000;
+}
+
+#story {
+    padding: 27px 0;
+    background: #f8f8f8;
+}
+
+.storyInner div {
+    width: 82.933%;
+    height: 328px;
+    padding: 23px 14px;
+    margin: 0 auto;
+    border: 3px solid #f47933;
+    border-radius: 3px;
+    background: #fff url(../img/cjw-bg-smart.jpg) no-repeat right bottom;
+    background-size: 88.585%;
+    color: #343434;
+}
+
+.storyInner div:first-child ~ div {
+    display: none;
+}
+
+.storyInner div:nth-child(2){ 
+    border-color: #01b5d6;
+    background-image: url(../img/cjw-bg-fresh.jpg);
+}
+
+.storyInner div:nth-child(3){ 
+    border-color: #ef4665;
+    background-image: url(../img/cjw-bg-classic.jpg);
+}
+
+.storyInner div b {
+    display: block;
+    width: 72px;
+    height: 31px;
+    background: url(../img/cjw-logo-smart.png) no-repeat;
+    background-size: contain;
+    text-indent: -9999px;
+}
+
+.storyInner div:nth-child(2) b{
+    background-image: url(../img/cjw-logo-fresh.png);
+}
+
+.storyInner div:nth-child(3) b {
+    background-image: url(../img/cjw-logo-classic.png);
+}
+
+.storyInner div i {
+    font-size: 2.0rem;
+    line-height: 1.25;
+    font-style: normal;
+}
+
+.storyInner div i span {
+    display: block;
+}
+
+.storyInner div p {
+    margin: 13px 0 15px;
+    font-size: 1.3rem;
+}
+
+.storyInner div a {
+    display: block;
+    width: 150px;
+    height: 35px;
+    border: 2px solid #cfcfcf;
+    background: #fff;
+    color: #343434;
+    font-size: 1.1rem;
+    line-height: 31px;
+    text-align: center;
+}
+
+.storyInner div a span {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    margin-left: 15px;
+    background: url(../img/cjw-plus-story-orange.png) no-repeat;
+    background-size: contain;
+}
+
+.storyInner div:nth-child(2) a span {
+    background-image: url(../img/cjw-plus-story-blue.png);
+}
+
+.storyInner div:nth-child(3) a span {
+    background-image: url(../img/cjw-plus-story-red.png);
+}
+
+/* cast */
+
+#cast {
+    padding-bottom: 30px;
+    background: #f8f8f8;
+}
+
+.castInner .title {
+    height: 147px;
+    padding-top: 36px;
+    margin-bottom: 19px;
+    background: url(../img/cjw-bg-foodCast.jpg) no-repeat center/cover;
+    text-align: center;
+}
+
+.castInner h3 {
+    margin-bottom: 15px;
+    font-size: 3.3rem;
+    color: #fff;
+    font-weight: normal;
+}
+
+.castInner .title a{
+    display: inline-block;
+    width: 230px;
+    height: 40px;
+    border: 2px solid rgba(255,255,255,0.6);
+    background: rgba(0,0,0,0.4);
+    color: #fff;
+    font-size: 1.3rem;
+    line-height: 36px;
+}
+
+
+.castInner .title a span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-left: 11px;
+    background: url(../img/cjw-plus-section-blue.png) no-repeat center/contain;
+}
+
+.castInner .slider {
+    width: 82.933%; /* 622/750 *100 */
+    padding: 2px;
+    margin: 0 auto 61px;
+    border: 1px solid rgba(149,149,149,0.6);
+    border-radius: 3px;
+}
+
+/* slider hide */
+
+.castInner .slider div:first-child ~ div {
+    display: none;
+} 
+
+.castInner .slider div > span {
+    display: block;
+    height: 202px;
+    background: url(../img/cjw-img-foodCast.jpg) no-repeat center/cover;
+}
+
+.castInner .slider div a {
+    display: block;
+    padding: 15px 0 18px;
+    text-align: center;
+}
+
+.castInner .slider div a b,
+.castInner .slider div a p,
+.castInner .slider div a > span {
+    display: none;
+}
+
+.castInner .slider div a h4 {
+    font-size: 1.3rem;
+    font-weight: normal;
+    color: #626262;
+}
+
+.castInner .banner {
+    display: block;
+    position: relative;
+    width: 82.933%;
+    padding: 24px 47px 25px 98px;
+    margin: 0 auto 11px;
+    background: #02b5d6 url(../img/cjw-icon-foodLab.png) no-repeat;
+    background-position: 14px 50%;
+    background-size: 58px;
+    border-radius: 3px;
+    color: #000;
+}
+
+.castInner .banner:last-child {
+    margin-bottom: 0;
+    background-color: #76d9c5;
+    background-image: url(../img/cjw-icon-bottleRecipe.png);
+}
+
+.castInner .banner h4{
+    margin-bottom: 10px;
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.castInner .banner p {
+    font-size: 1.1rem;
+    line-height: 1.3;
+}
+
+.castInner .banner > span {
+    position: absolute;
+    
+    top: 50%;
+    right: 12px;
+    width: 16px;
+    height: 30px;
+    margin-top: -15px;
+    background: url(../img/cjw-arrow-section-right.png) no-repeat center/contain;
+    text-indent: -9999px;
+}
+ 
+/* 푸드 노하우 */
+
+#knowhow {
+    padding-bottom: 30px;
+    background: #f8f8f8;
+}
+
+.knowhowInner .title {
+    height: 147px;
+    background: url(../img/cjw-bg-foodKnowhow-mobile.jpg) no-repeat center/cover;
+    text-align: center;
+    margin-bottom: 19px;
+    padding-top: 37px;
+}
+/*  39px */
+
+.knowhowInner h3 {
+    font-size: 3.5rem;
+    font-weight: normal;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.knowhowInner .title a {
+    border: 2px solid rgba(255,255,255,0.6);
+    border-radius: 1px;
+    background: rgba(0,0,0,0.4);
+    display: inline-block;
+    width: 230px;
+    height: 40px;
+    font-size: 1.3rem;
+    line-height: 36px;
+    color: #fff;
+    
+}
+
+.knowhowInner .title a span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-left: 11px;
+    background: url(../img/cjw-plus-section-yellow.png) no-repeat center/contain;
+}
+
+/* slider */
+
+.knowhowInner .slider {
+    width: 82.933%;
+    margin: 0 auto 64px;
+    padding: 2px;
+    border: 1px solid #bdbdbd;
+    border-radius: 3px;
+    background: #fff;
+}
+
+.knowhowInner .slider div:first-child ~ div{
+    display: none;
+}
+
+.knowhowInner .slider div > span {
+    display: block;
+    height: 199px;
+    background: url(../img/cjw-img-specialRecipe.jpg) no-repeat center/cover;
+}
+
+.knowhowInner .slider div a {
+    display: block;
+    padding: 15px 0 17px;
+}
+
+.knowhowInner .slider div p {
+    color: #626262;
+    font-size: 1.3rem;
+    line-height: 1.154;
+    text-align: center;
+}
+
+.knowhowInner .slider a b,
+.knowhowInner .slider a h4,
+.knowhowInner .slider a > span {
+    display: none;
+}
+
+.knowhowInner .banner {
+    display: block;
+    position: relative;
+    width: 82.933%;
+    margin: 0 auto 11px;
+    padding: 25px 51px 24px 99px;
+    border-radius: 3px;
+    background: #76d9c5 url(../img/cjw-icon-cjwRecipe.png) no-repeat 16px 50%;
+    background-size: 59px;
+    color: #000;
+}
+
+.knowhowInner .bannerWrap .banner {
+    margin-bottom: 0;
+    background-color: #f4cb4d;
+    background-image: url(../img/cjw-icon-eShop.png);
+}
+
+.knowhowInner .bannerWrap a:nth-child(1),
+.knowhowInner .bannerWrap a:nth-child(2),
+.knowhowInner .bannerWrap a:nth-child(4) {
+    display: none;
+}
+
+.knowhowInner .banner h4 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.knowhowInner .banner p {
+    font-size: 1.1rem;
+    line-height: 1.182;
+}
+
+.knowhowInner .banner > span {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    width: 16px;
+    height: 30px;
+    margin-top: -15px;
+    background: url(../img/cjw-arrow-section-right.png) no-repeat;
+    background-size: contain;
+    text-indent: -9999px;
+}
+
+
+
+/* 청정원 프렌즈 */
+
+#friends {
+    padding-bottom: 30px;
+    background: #f8f8f8;
+}
+
+.friendsInner .title {
+    height: 147px;
+    padding-top: 36px;
+    margin-bottom: 19px;
+    background: url(../img/cjw-bg-friends.jpg) no-repeat center/cover;
+    text-align: center;
+}
+
+.friendsInner .title h3 {
+    font-size: 3.3rem; /* 33px */
+    font-weight: normal;
+    color: #fff;
+    margin-bottom: 14px;
+}
+
+.friendsInner .title a {
+    width: 230px;
+    height: 40px;
+    line-height: 36px;
+    display: inline-block;
+    border: 2px solid rgba(255,255,255,0.6);
+    border-radius: 2px;
+    background: rgba(0,0,0,0.4);
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+.friendsInner .title a span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-left: 14px;
+    background: url(../img/cjw-plus-section-green.png) no-repeat center/contain;
+}
+
+/* banner */
+
+.friendsInner .banner {
+    position: relative;
+    width: 82.933%;
+    margin: 0 auto 10px;
+    display: block;
+}
+ 
+.friendsInner .banner:nth-of-type(1) {
+    padding: 26px 10px;
+    background: #f4cb4d;
+    color: #000;
+    overflow: hidden;
+}
+
+.friendsInner .banner:nth-of-type(1) .bg {
+    position: absolute;
+    bottom: 0;
+    right: -31px;
+    width: 139px;
+    height: 139px;
+    display: inline-block;
+    background: url(../img/cjw-icon-foodBox.png) no-repeat center/contain;
+}
+
+.friendsInner .banner:nth-of-type(1) b {
+    font-size: 1.8rem;
+    line-height: 1.111;
+    font-weight: normal;
+}
+
+.friendsInner .banner:nth-of-type(1) .line {
+    height: 2px;
+    width: 67.732%;
+    background: rgba(255,255,255,0.5);
+    display: block;
+    margin: 16px 0;
+}
+
+.friendsInner .banner:nth-of-type(1) p {
+    font-size: 1.1rem;
+    line-height: 1.181;
+    margin-bottom: 22px;
+}
+
+.friendsInner .banner:nth-of-type(1) span:last-child {
+    display: block;
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 31px;
+    width: 145px;
+    height: 35px;
+    background: rgba(255,255,255,0.5);
+    border: 2px solid #fff;
+    border-radius: 2px;
+}
+
+.friendsInner .banner:nth-of-type(2) {
+    background: #02b5d6 url(../img/cjw-icon-friendsPanel.png) no-repeat;
+    background-size: 71px;
+    background-position: 15px 50%;
+    color: #fff;
+    padding: 21px 30px 25px 100px;
+}
+
+.friendsInner .banner:nth-of-type(2) h4 {
+    font-size: 1.0rem;
+    font-weight: normal;
+    margin-bottom: 9px;
+}
+
+.friendsInner .banner:nth-of-type(2) p {
+    font-size: 1.2rem;
+    font-weight: normal;
+    line-height: 1.083;
+}
+.friendsInner .banner:nth-of-type(2) span {
+    background: url(../img/cjw-arrow-section-right.png) no-repeat center/contain;
+    position: absolute;
+    top: 50%;
+    right: 11px;
+    margin-top: -15px;
+    width: 15px;
+    height: 30px;
+    text-indent: -9999px;
+}
+
+.friendsInner .box {
+    width: 82.933%;
+    margin: 0 auto;
+}
+
+.friendsInner .bannerBox {
+    float: left;
+    width: 50%;
+    height: 113px;
+    border: 2px solid #cfcfcf;
+    background: #fff;
+    color: #000;
+    text-align: center;
+}
+
+.friendsInner .bannerBox:last-child {
+    border-left: none;
+}
+
+.friendsInner .bannerBox h4 {
+    padding-top: 82px;
+    background: url(../img/cjw-icon-foodEditor.png) no-repeat center/contain;
+    background-size: 62px;
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+.friendsInner .bannerBox:last-child h4 {
+    background-image: url(../img/cjw-icon-meetingTalk.png);
+    background-size: 53px;
+}
+
+/* sns */
+
+#sns {
+    padding: 38px 0 33px;
+    background: #fff;
+}
+
+.snsInner .title {
+    text-align: center;
+}
+.snsInner .title h3 {
+    margin-bottom: 14px;
+    font-weight: normal;
+    font-size: 3.3rem;
+    color: #000;
+}
+
+.snsInner .title p {
+    color: #4b4b4b;
+    font-size: 1.4rem;
+}
+
+.snsInner .sns {
+    margin: 20px 0 31px;
+    text-align: center;
+}
+.snsInner .sns a {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    background: url(../img/cjw-sns-facebook.png) no-repeat center/contain;
+    text-indent: -9999px;
+    margin-right: 20px;
+}
+
+.snsInner .sns a:nth-child(2) {
+    background-image: url(../img/cjw-sns-kakao.png);
+}
+
+.snsInner .sns a:nth-child(3) {
+    background-image: url(../img/cjw-sns-naver.png);
+}
+
+.snsInner .sns a:nth-child(4) {
+    background-image: url(../img/cjw-sns-twitter.png);
+}
+
+.snsInner .sns a:nth-child(5) {
+    background-image: url(../img/cjw-sns-instagram.png);
+}
+    
+.snsInner .sns a:last-child{
+    background-image: url(../img/cjw-sns-youtube.png);
+    margin-right: 0;
+}
+
+.snsInner .box {
+    width: 82.933%;
+    margin: 0 auto;
+}
+
+.snsInner .box a {
+    display: block;
+    height: 160px;
+    border: 2px solid #f8f7f7;
+}
+
+.snsInner .box a span {
+    float: left;
+    width: 50%;
+    height: 100%;
+    background: url(../img/cjw-img-snsNaver.jpg) no-repeat center/cover;
+    border-right: 2px solid #f8f7f7;
+}
+
+.snsInner .box a:last-child span {
+    float: right;
+    background-image: url(../img/cjw-img-snsFacebook.jpg);
+    border-right: none;
+    border-left: 2px solid #f8f7f7;
+}
+
+.snsInner .box a:last-child {
+    border-top: none;
+}
+
+.snsInner .box .text {
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding: 21px 10px;
+    position: relative;
+}
+
+.snsInner .box h4 {
+    height: 18px;
+    background: url(../img/cjw-sns-blog.png) no-repeat right center/contain;
+    color: #000;
+    font-size: 1.3rem;
+    line-height: 18px;
+    font-weight: normal;
+}
+
+.snsInner .box a:last-child h4 {
+    background-image: url(../img/cjw-sns-facebook.png);
+}
+
+.snsInner .box p {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 16px;
+    color: #494949;
+    font-size: 1.3rem;
+    line-height: 1.076;
+}
+
+/* footer */
+
+footer {
+    background: #fbfbfb;
+    border-top: 1px solid #cfcfcf;
+}
+
+footer  a {
+    color: #767676;
+}
+
+.snsWrap > a {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 8.696%;
+    border-bottom: 1px solid #cfcfcf;
+    color: #02b5d6;
+    font-size: 1.2rem;
+}
+
+.snsWrap li {
+    float: left;
+    width: 50%;
+    border-bottom: 1px solid #cfcfcf;
+}
+
+.snsWrap li:nth-child(even) {
+    border-left: 1px solid #cfcfcf;
+}
+
+.snsWrap li a {
+    display: 50px;
+    line-height: 50px;
+    font-size: 1.2rem;
+    padding-left: 16.976%; 
+}
+
+.snsWrap li a:hover,
+.snsWrap li a:focus {
+    color: #000;
+}
+
+.copyWrap > span a {
+    float: left;
+    width: 50%;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #cfcfcf;
+    background: url(../img/cjw-logo-ccm.png) no-repeat;
+    background-size: 27px;
+    background-position: 16.710% 50%;
+    padding-left: 15.748%;
+    font-size: 1.0rem;
+}
+
+.copyWrap > span a:last-child {
+    background-image: url(../img/cjw-logo-wa.png);
+    background-size: 18px;
+    padding-left: 13.748%;
+    border-left: 1px solid #cfcfcf;
+}
+
+.copy {
+    margin-top: 29px;
+    text-align: center;
+}
+
+.copy img {
+    width: 40px;
+    margin-bottom: 24px;
+}
+
+.copy p > span {
+    display: none;
+}
+
+.copy .phone {
+    color: #666;
+    font-size: 1.1rem;
+    line-height: 1.454;
+    font-style: normal;
+}
+
+.copy .phone span:first-child::after {
+    content: "|";
+    margin: 0 11px;
+}
+
+.copy .phone span:last-child {
+    display: block;
+}
+
+footer small {
+    display: block;
+    line-height: 45px;
+    margin-top: 27px;
+    background: #666;
+    color: #fbfbfb;
+    font-size: 1.0rem;
+}
+
+/* 768px~ */
+
+@media screen and (min-width: 768px){
+    
+    /* reset */
+    
+    body {
+        font-family: 'Spoqa Han Sans', 'Sans-serif';
+    }
+    
+    .navWrap {
+        height: 80px;
+    }
+    
+    h1 {
+        top: 23px;
+        left: 50%;
+        margin-left: -54px;
+        width: 108px;
+}
+    
+    .searchWrap > form > button {
+        top: 26px;
+        left: 5.208%;
+        width: 30px;
+        height: 30px;
+}
+    
+    .navBtn {
+        top: 26px;
+        right: 5.208%;
+        width: 42px;
+        height: 26px;
+}    
+    .searchOn .close {
+        font-size: 2.1rem;
+}
+    .searchOn input {
+        width: 71.614%;
+        margin: 23px 1.953% 0;
+        border-radius: 5px;
+        font-size: 2.1rem;
+ }
+    .searchOn button {
+        width: 70px;
+        height: 40px;
+        border-radius: 5px;
+        background-size: 20px;
+    }
+    .navBtn span {
+        height: 6px;
+        border-radius: 6px;
+}
+
+    .navBtn span:nth-of-type(2) {
+        margin: 4px 0; 
+}
+    
+    /* nav */
+    
+    .navInner {
+        width: 66.145%;
+        padding-top: 29px;
+    }
+    
+    .navInner strong {
+        width: 83.070%;
+        margin:  0 7.086% 17px 7.086%;
+    }
+    
+    .navInner strong span {
+        width: 100px;
+        height: 35px;
+    }    
+    
+    .navInner strong > a {
+        line-height: 35px;
+        font-size: 2.1rem;
+    }
+    
+    .navInner ul {
+        width: 83.070%;
+    }
+    
+    
+    .navInner ul > li > a {
+        height: 90px;
+        line-height: 90px;
+        padding-left: 4.265%;
+        font-size: 2.5rem;
+    }
+    
+    .navInner ul > li > a > span{
+        width: 20px;
+        height: 10px;
+        right: 2.843%;
+        margin-top: -5px;
+    }
+    
+    .navInner ol li a{
+        height: 69px;
+        line-height: 69px;
+        padding-left: 5.291%;
+        font-size: 2.1rem;
+    }
+    
+    .navInner > a {
+        height: 100px;
+        padding-left: 10.629%;
+        font-size: 2.5rem;
+        line-height: 100px;
+    }
+    
+    .navInner > a span {
+        top: 30px;
+        right: 11.811%;
+        width: 40px;
+        height: 40px;
+    }    
+    
+    /* visul */
+    
+    .visual {
+        height: 750px;
+        margin-top: 80px;
+        padding-top: 180px;
+    }
+    
+    .visual i {
+        margin-bottom: 24px;
+        font: 3.3rem nbgR, sans-serif;
+    }
+    
+    .visual b {
+        font: 7.5rem nbgR, sans-serif;
+    }
+    
+    .visual p {
+        width: 66.666%;
+        margin: 33px auto 34px;
+        font-size: 2.4rem;
+        line-height: 1.4;
+    }
+    
+    .visual a {
+        width: 300px;
+        height: 70px;
+        font-size: 2.1rem;
+        line-height: 66px;
+    }
+    
+    /* header end */
+    
+    /* section */
+    
+    .section {
+        height: 70px;
+    }
+    
+    .section.on {
+        top: 80px;
+    }
+    
+    .section li {
+        width: auto;
+    }
+    
+    .section li::before {
+        content: "|";
+        font-size: 1.7rem;
+        line-height: 70px;
+        color: #959595;
+    }
+    
+    .section li:first-child::before {
+        content: none;
+    }
+    
+    .section a {
+        padding: 0 25px;
+        font-size: 1.7rem;
+        line-height: 70px;
+    }
+    
+    /* main */
+    
+    #story {
+        padding: 37px 0;
+    }
+    
+    .storyInner {
+        width: 80.989%;
+        margin: 0 auto;
+    }
+    
+    .storyInner div {
+        float: left;
+        width: 49.517%;
+        /* 308 / 622 */
+        height: 375px;
+        margin-left:  0.964%;
+        padding: 22px;
+    }
+    
+    .storyInner div:first-child {
+        margin-left:  0;
+
+    }
+    
+    #story .storyInner div:nth-child(2) {
+        display: block;
+    }
+    
+    .storyInner div b {
+        width: 72px;
+        height: 31px;
+        margin-bottom: 20px;
+    }
+    
+    .storyInner div p {
+        font-size: 1.7rem;
+        margin: 15px 0 29px;
+    }
+    
+    .storyInner div a {
+        height: 45px;
+        width: 188px;
+        font-size: 1.5rem;
+        line-height: 41px;
+    }
+    
+    .storyInner div a span {
+        width: 15px;
+        height: 15px;
+        margin-left: 19px;
+    }
+    
+    #cast {
+        padding-bottom: 106px;
+    }
+    
+    .castInner .title {
+        height: 294px;
+        padding-top: 83px;
+        margin-bottom: 38px;
+    }
+    
+    .castInner h3 {
+        margin-bottom: 30px;
+        font: 5.8rem nbgR, sans-serif;
+    }
+    
+    .castInner .title a {
+        width: 350px;
+        height: 70px;
+        font-size: 2.1rem;
+        line-height: 66px;
+    }
+    
+    .castInner .title a span {
+        width: 20px;
+        height: 20px;
+        margin-left: 36px;
+    }
+    
+    .castInner .slider {
+        width: 84.115%;
+        padding: 3px;
+        margin-bottom: 122px;
+        border-width: 2px;
+        border-radius: 5px;
+    }
+    
+    .castInner .slider div > span {
+        height: 397px;
+        border-radius: 5px 5px 0 0;
+    }
+    
+    .castInner .slider div a {
+        padding: 30px 0 34px;
+    }
+    
+    .castInner .slider div a h4 {
+        font-size: 2.0rem;
+    }
+    
+    .castInner .banner {
+        width: 84.115%;
+        padding: 54px 105px 50px 157px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        background-position: 28px 50%;
+        background-size: 100px;
+    }
+    
+    .castInner .banner h4 {
+        margin-bottom: 22px;
+        font-size: 3.3rem;
+    }
+    
+    .castInner .banner p {
+        font-size: 2rem;
+        line-height: 1.3;
+    }
+    
+    .castInner .banner > span {
+        right: 35px;
+        width: 29px;
+        height: 54px;
+        margin-top: -27px;
+    }
+    
+    /* knowhow */
+    
+    #knowhow {
+        padding-bottom: 106px;
+    }
+    
+    .knowhowInner .title {
+        height: 294px;
+        padding-top: 82px;
+        margin-bottom: 38px;
+    }
+    
+    .knowhowInner h3 {
+        margin-bottom: 30px;
+        font: 5.8rem nbgR, sans-serif;
+    }
+    
+    .knowhowInner .title a {
+        width: 350px;
+        height: 70px;
+        font-size: 2.1rem;
+        line-height: 68px;
+    }
+    
+    .knowhowInner .title a span {
+        width: 20px;
+        height: 20px;
+        margin-left: 36px;
+    }
+    
+    .knowhowInner .slider {
+        width: 84.115%;
+        padding: 3px;
+        margin-bottom: 122px;
+        border-width: 2px;
+        border-radius: 5px;
+    }
+    
+    .knowhowInner .slider div > span {
+        height: 397px;
+        border-radius: 5px 5px 0 0;
+    }
+    
+    .knowhowInner .slider div a {
+        padding: 29px 0 33px;
+    }
+    
+    .knowhowInner .slider div p {
+        font-size: 2.4rem;
+        line-height: 1.25;
+    }
+    
+    .knowhowInner .banner {
+        width: 84.115%;
+        padding: 54px 105px 50px 211px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        background-position: 40px 50%;
+        background-size: 100px;
+    }
+
+    .knowhowInner .banner h4 {
+        margin-bottom: 22px;
+        font-size: 3.3rem;
+    }
+    
+    .knowhowInner .banner p {
+        font-size: 2rem;
+        line-height: 1.3;
+    }
+    
+    .knowhowInner .banner > span {
+        right: 35px;
+        width: 29px;
+        height: 54px;
+        margin-top: -27px;
+    }
+    
+    /* friends */
+    
+    #friends {
+        padding-bottom: 63px;
+    }
+    
+    .friendsInner .title {
+        height: 294px;
+        padding-top: 84px;
+        margin-bottom: 38px;
+    }
+    
+    .friendsInner .title h3 {
+        margin-bottom: 30px;
+        font: 5.8rem nbgR, sans-serif;
+    }
+    
+    .friendsInner .title a{
+        width: 350px;
+        height: 70px;
+        font-size: 2.1rem;
+        line-height: 66px;
+    }
+    
+    .friendsInner .title a span {
+        width: 20px;
+        height: 20px;
+        margin-left: 36px;
+    }
+    
+    .friendsInner .banner {
+        width: 84.115%;
+        margin: 0 auto 20px;
+    }
+    
+    .friendsInner .banner:nth-of-type(1) {
+        padding: 52px 0 44px 38px;
+    }
+    
+    .friendsInner .banner:nth-of-type(1) .bg {
+        right: -51px;
+        width: 277px;
+        height: 277px;
+    }
+    
+    .friendsInner .banner:nth-of-type(1) b {
+        font-size: 3.3rem;
+    }
+    
+    .friendsInner .banner:nth-of-type(1) .line {
+        width: 64.814%;
+        height: 3px;
+        margin: 31px 0;
+    }
+    
+    .friendsInner .banner:nth-of-type(1) p {
+        margin-bottom: 46px;
+        font-size: 2rem;
+    }
+    
+    .friendsInner .banner:nth-of-type(1) span:last-child {
+        width: 250px;
+        height: 70px;
+        border-radius: 2px;
+        font-size: 2.1rem;
+        line-height: 66px;
+    }
+    
+    .friendsInner .banner:nth-of-type(2) {
+        padding: 55px 94px 54px 210px;
+        margin-bottom: 40px;
+        background-position: 59px 50%;
+        background-size: 110px;
+    }
+    
+    .friendsInner .banner:nth-of-type(2) h4 {
+        margin-bottom: 20px;
+        font-size: 1.8rem;
+    }
+    
+    .friendsInner .banner:nth-of-type(2) p {
+        font-size: 2rem;
+        line-height: 1.3;
+    }
+    
+    .friendsInner .banner:nth-of-type(2) span {
+        right: 35px;
+        width: 29px;
+        height: 56px;
+        margin-top: -28px;
+    }
+    
+    .friendsInner .box {
+        width: 84.115%;
+    }
+    
+    .friendsInner .bannerBox {
+        height: 225px;
+        padding-top: 25px;
+    }
+    
+    .friendsInner .bannerBox h4 {
+        padding-top: 141px;
+        margin-bottom: 10px;
+        background-size: 123px;
+        font-size: 2.1rem;
+    }
+    
+    .friendsInner .bannerBox:last-child h4 {
+        background-position: 50% 9px;
+        background-size: 106px;
+    }
+    
+    /* sns */
+    
+    #sns {
+        padding: 76px 0 86px;
+    }
+    
+    .snsInner .title h3 {
+        margin-bottom: 24px;
+        font: 5.8rem nbgR, sans-serif;
+    }
+    
+    .snsInner .title p {
+        font-size: 2.1rem;
+    }
+    
+    .snsInner .sns {
+        margin: 50px 0 62px;
+    }
+    
+    .snsInner .sns a {
+        width: 70px;
+        height: 70px;
+        margin-top: 40px;
+    }
+    
+    .snsInner .box {
+        width: 84.115%;
+    }
+    
+    .snsInner .box a {
+        height: 280px;
+    }
+    
+    .snsInner .box .text {
+        padding: 35px 20px 0;
+    }
+    
+    .snsInner .box h4 {
+        height: 36px;
+        font-size: 1.8rem;
+        line-height: 36px;
+    }
+    
+    .snsInner .box p {
+        bottom: 46px;
+        padding: 0 20px;
+        font-size: 2rem;
+    }
+    
+    /* footer */
+    
+    .snsWrap > a {
+        height: 100px;
+        padding-left: 7.421%;
+        font-size: 2rem;
+        line-height: 100px;
+    }
+    
+    .snsWrap li a {
+        height: 80px;
+        padding-left: 14.843%;
+        font-size: 2rem;
+        line-height: 80px;
+    }
+    
+    .copyWrap > span a{
+        height: 80px;
+        padding-left: 14.843%;
+        background-position: 14.843%;
+        background-size: 36px;
+        font-size: 2rem;
+        line-height: 80px;
+    }
+    
+    .copyWrap > span a:last-child {
+        background-size: 32px;
+    }
+    
+    .copy {
+        margin-top: 43px;
+    }
+    
+    .copy img {
+        width: auto;
+        margin-bottom: 49px;
+    }
+    
+    .copy .phone {
+        font-size: 2.2rem;
+    }
+    
+    .copy .phone span:first-child::after {
+        margin: 0 22px;
+    }
+    
+    footer small {
+        height: 88px;
+        margin-top: 57px;
+        font-size: 1.8rem;
+        line-height: 88px;
+    }
+    
+}
+
+/* 1024px~ */
+
+@media screen and (min-width:1024px){
+    
+    /* reset */
+    
+    .pc {
+        display: block;
+    }
+    .mobile {
+        display: none;
+    }
+    
+    .navWrap {
+        height: 135px;
+        position: relative;
+    }
+    
+    h1 {
+        top: -9999px;
+        left: -9999px;
+    }
+    
+    
+    .searchWrap {
+        width: 88.476%;
+        height: 56px;
+        margin: 0 auto;
+    }
+    
+    .searchWrap form {
+        position: relative;
+        float: left;
+    }
+    
+    .searchOn {
+        display: block;
+        position: static;
+        width: auto;
+        height: auto;
+    }
+    
+    .searchOn input {
+        width: 140px;
+        height: 22px;
+        padding-bottom: 11px;
+        border-radius: 0;
+        border-bottom: 1px solid #4b4b4b;
+        background: none;
+        font-size: 1.4rem;
+    }
+    
+    .searchOn button {
+        position: absolute;
+        right: -17px;
+        bottom: 2px;
+        width: 15px;
+        height: 15px;
+        background: url(../img/cjw-icon-search1.png) no-repeat center/contain;
+    }
+    
+    .searchWrap .pc {
+        float: right;
+        margin-top: 31px;
+    }
+    
+    .searchWrap .pc a {
+        font-size: 1.4rem;
+        color: #808080;  /* #00b4d8 */
+    }
+    
+    .searchWrap .pc a:first-child {
+        color: #00b4d8;
+    }
+    
+    .searchWrap .pc a:first-child::before {
+        content: none;
+    }
+    
+    .searchWrap .pc a::before {
+        content: "|";
+        padding:  0 15px;
+    }
+    
+            header.on .navWrap {
+                position: fixed;
+                width: 100%;
+                height: 70px;
+            }
+            header.on .searchWrap {
+                display: none;
+            }
+    
+            header.on .navInner strong span {
+                width: 110px;
+                height: 39px;
+            }
+            header.on .navInner ul> li > a {
+                font-size: 1.5rem;
+                line-height: 70px;
+            }
+    
+    header nav {
+        display: block;
+        position: relative;
+        width: auto;
+        height: auto;
+        background: none;
+        border-top: 1px solid #cfcfcf;
+    }
+    
+    .navInner {
+        width: 88.476%;
+        position: static;
+        padding-top: 0;
+        margin: 0 auto;
+        background: none;
+    }
+    
+    .navInner strong {
+        float: left;
+        width: auto;
+        margin: 0;
+    }
+    
+    .navInner strong span {
+        width: 120px;
+        height: 42px;
+        margin-top: 19px;
+    }
+
+    .navInner ul {
+        float: right;
+        width: auto;
+        margin-left: 0;
+        border-top: none;
+    }
+    
+    .navInner ul > li {
+        float: left;
+        display: inline-block;
+    }
+    
+    .navInner ul > li::before {
+        content: "|";
+        color: #000;
+        font-size: 1.6rem;
+        margin: 0 20px ;
+    }
+
+    .navInner ul > li:first-child::before {
+        content: none;
+    }
+    
+    .navInner ul > li > a {
+        
+        display: inline-block;
+        color: #000;
+        font-size: 1.6rem;
+        border-bottom: none;
+        padding-left: 0;
+        line-height: 78px;
+    }
+    
+    .navInner ul > li > a > span {
+        display: none;
+    }
+    
+    .navInner > a {
+        display: none;
+    }
+    
+    .navInner .open .wrap {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 78px;
+        width: 100%;
+        border-top: 1px solid #cfcfcf;
+        background: #fff;
+    }
+    
+    .navInner .wrapInner {
+        width: 88.476%;
+        margin: 0 auto;
+    }
+    
+    .navInner .wrapNav {
+        height: 290px;
+    }
+    
+    .navInner .left {
+        float: left;
+        width: 51.876%;
+        height: 100%;
+        margin: 10px 0;
+        padding-top: 53px;
+        border-right: 1px solid #cfcfcf;
+    }
+    
+    .navInner .right {
+        float: right;
+    }
+    
+    .navInner ol {
+        float: left;
+        width: 50%;
+        background: none;
+    }
+    
+    .navInner li:nth-child(1) ol {
+        width: 33.333%;
+    }
+    
+    .navInner ol li {
+        width: auto;
+        margin-left: 0;
+        border-bottom: none;
+    }
+    
+    .navInner ol li a {
+        height: auto;
+        margin-left: 0;
+        font-size: 2.0rem;
+        color: #000;
+        line-height: 2;
+    }
+    
+     /* 1024px~ 열려있을때  */
+            .navInner ul > li.open+li > a {
+                border-top: none;
+            }
+
+            .navInner ul > li.open > a > span {
+                display: block;
+                width: 25px;
+                height: 14px;
+                background: url(../img/cjw-arrow-nav-bottom-fill.png) no-repeat center/contain;
+                z-index: 2;
+                top: auto;
+                bottom: -4px;
+                right: 50%;
+                margin-right: -12px;
+            }
+    
+    .navInner ol li a:active, .navInner ol li a:focus {
+        color: #2fb7e6;
+    }
+    
+    .navInner .right {
+        display: block;
+        float: right;
+        width: 47.233%;
+        height: 100%;
+        padding: 52px 0 0 36px;
+        background: url(../img/cjw-bg-nav-event.jpg) no-repeat right bottom;
+    }
+    
+    .navInner li:nth-child(6) .right {
+        background-position: right 90%;
+    }
+    
+    .navInner li:nth-child(5) .right {
+        background-image: url(../img/cjw-bg-nav-friends.jpg);
+    }
+    
+    .navInner li:nth-child(4) .right {
+        background: none;
+    }
+    
+    .navInner li:nth-child(3) .right {
+        background-image: url(../img/cjw-bg-nav-foodKnowhow.jpg);
+    }
+    
+    .navInner li:nth-child(2) .right {
+        background-image: url(../img/cjw-bg-nav-foodCast.jpg);
+    }
+    
+    .navInner li:nth-child(1) .right {
+        background-image: url(../img/cjw-bg-nav-brandStory.jpg);
+    }
+    
+    .navInner li:nth-child(4) .right a {
+        width: 49px;
+        height: 49px;
+        background: url(../img/cjw-sns-facebook.png) no-repeat center/contain;
+        border:none;
+        margin-right: 9px;
+        text-indent: -9999px;
+    } 
+    
+    .navInner li:nth-child(4) .right a:nth-of-type(2) {
+        background-image: url(../img/cjw-sns-kakao.png);
+    }
+    
+    .navInner li:nth-child(4) .right a:nth-of-type(3) {
+        background-image: url(../img/cjw-sns-blog.png);
+    }
+    
+    .navInner li:nth-child(4) .right a:nth-of-type(4) {
+        background-image: url(../img/cjw-sns-twitter.png);
+    }
+    
+    .navInner li:nth-child(4) .right a:nth-of-type(5) {
+        background-image: url(../img/cjw-sns-instagram.png);
+    }
+    
+    .navInner li:nth-child(4) .right a:nth-of-type(6) {
+        background-image: url(../img/cjw-sns-youtube.png);
+    }
+    
+    .navInner li:nth-child(1) .right a {
+        display: block;
+        margin-top: 25px;
+    }
+    
+    .navInner .right b {
+        font-size: 3.4rem;
+        font-weight: normal;
+    }
+    
+    .navInner .right p {
+        color: #343434;
+        font-size: 1.6rem;
+        padding: 18px 0 26px;
+    }
+    
+    .navInner .right a {
+        display: inline-block;
+        width: 109px;
+        height: 45px;
+        border: 2px solid #cfcfcf;
+        background: #fff;
+        color: #343434;
+        font-size: 1.4rem;
+        line-height: 41px;
+        padding-left: 15px;
+        position: relative;
+    }
+    
+    .navInner .right a > span {
+        width: 12px;
+        height: 12px;
+        top: 50%;
+        right: 13px;
+        margin-top: -7px;
+        position: absolute;
+        background: url(../img/cjw-plus-section-blue.png) no-repeat right/contain;
+    }
+    
+    /* visual */
+    
+    .visual {
+        height: 638px;
+        padding-top: 135px;
+        margin-top: 0;
+    }
+    
+    header.on .visual {
+        margin-top: 70px;
+    }
+    
+    .visual i {
+        font-size: 3.7rem;
+        margin-bottom: 19px;
+    }
+    
+    .visual b {
+        font-size: 8.3rem;
+    }
+    
+    .visual p {
+        width: 78.515%;
+        font-size: 2.5rem;
+        margin: 33px auto 48px;
+    }
+    
+    .visual p a {
+        width: 350px;
+        height: 80px;
+        font-size: 2.5rem;
+        line-height: 76px;
+    }
+    
+    .visual .pc {
+        display: none;
+    }
+    
+    .section {
+        display: none;
+    }
+    
+    #story {
+        padding: 48px 0 102px;
+    }
+    
+    .storyInner {
+        width: 82.031%;
+    }
+    
+    .stoyInner div {
+        width: 48.809%;
+        height: 500px;
+        padding: 30px 35px;
+        margin-left: 2.38%;
+        background-size: 89.024%;
+    }
+    
+    .storyInner div b {
+        width: 96px;
+        height: 41px;
+        margin-bottom: 21px;
+    }
+    
+    .storyInner div i {
+        font-size: 2.5rem;
+        line-height: 1.32;
+    }
+    
+    .storyInner div p {
+        width: auto;
+        margin: 19px 0 41px;
+        font-size: 2.1rem;
+        line-height: 1.19;
+    }
+    
+    .storyInner div a {
+        width: 250px;
+        height: 60px;
+        font-size: 2.1rem;
+        line-height: 58px;
+    }
+    
+    .storyInner div a span {
+        width: 20px;
+        height: 20px;
+        margin-left: 25px;
+    }
+    
+    /* cast */
+    
+    #cast {
+        background: url(../img/cjw-bg-foodCast.jpg) no-repeat center/cover;
+        padding: 74px 0 76px;
+    }
+    
+    .castInner {
+        margin: 0 auto;
+        width: 93.128%;
+    }
+    
+    .castInner .title {
+        float: left;
+        background: none;
+        width: 38.69%;
+        height: 250px;
+        padding-top: 0;
+        margin-top: 0;
+        margin-bottom: 11px;
+        text-align: left;
+    }
+    
+    .castInner h3 {
+        margin-bottom: 27px;
+    }
+    
+    .castInner .title a {
+        width: 290px;
+        height: 78px;
+        line-height: 74px;
+        padding-left: 11px;
+        font-size: 1.9rem;
+    }
+    
+    .castInner .title a span {
+        margin-left: 8px;
+    }
+
+    .castInner .slider {
+        float: right;
+        width: 61.3%;
+        border-width: 0;
+        background: #fff;
+        border-radius: 5px 5px 5px 0;
+    }
+
+    
+    .castInner .slider div >span {
+        height: 507px;
+    }
+    
+    .castInner .slider div a {
+        height: 278px;
+        padding: 30px 30px 0;
+    }
+    
+    .castInner .slider div a b, .castInner .slider div a p, .castInner .slider div a > span {
+        display: block;
+    }
+    
+    .castInner .slider div a b {
+        font-size: 3.3rem;
+        color: #000;
+        font-weight: normal;
+    }
+    
+    .castInner .slider div a b span {
+        display: block;
+        width: 60px;
+        height: 3px;
+        margin: 16px auto 17px;
+        background: #00b5d8;
+    }
+    
+    .castInner .slider div h4 {
+        font-size: 2.1rem;
+        color: #000;
+    }
+    
+    .castInner .slider div a p {
+        font-size: 1.7rem;
+        width: 89.937%;
+        margin: 13px auto 20px;
+        color: #909090;
+        line-height: 1.176;
+    }
+    
+    .castInner .slider div a > span {
+        background: #00b5d8;
+        display: block;
+        border-radius: 2px;
+        width: 200px;
+        height: 50px;
+        margin: 0 auto;
+        border-radius: 2px;
+        color: #fff;
+        font-size: 2.1rem;
+        line-height: 50px;
+        
+    }
+    
+    .castInner .banner {
+        float: left;
+        width: 38.7%;
+        height: 250px;
+        background: #fff;
+        margin-bottom: 0;
+        padding: 40px 0 37px;
+        text-align: center;
+        border-radius: 5px 0 0 0;
+    }
+    
+    .castInner .banner:last-child {
+        height: 280px;
+        background: #02b5d6;
+        border-radius: 0 0 0 5px;
+    }
+    
+    .castInner .banner:last-child h4 {
+        color: #fff;
+        font-size: 3.3rem;
+        
+    }
+    
+    .castInner .banner:last-child h4 span {
+        background: rgba(255,255,255,0.7);
+    }
+    
+    .castInner .banner:last-child p {
+        width: 85.155%;
+        color: #fff;
+        margin: 0 auto;
+    }
+    
+    .castInner .banner h4 span {
+        display: block;
+        width: 60px;
+        height: 3px;
+        background: #02b5d6;
+        margin: 17px auto 16px;
+    }
+
+    .castInner .banner > span {
+        position: static;
+        display: block;
+        width: 200px;
+        height: 50px;
+        margin: 20px auto 0;
+        background: #00b5d8;
+        border-radius: 6px 0 0 0;
+        font-size: 2.1rem;
+        text-indent: 0;
+        color: #fff;
+        line-height: 50px
+    }
+    
+    .castInner .banner:last-child > span {
+        position: static;
+        display: block;
+        width: 200px;
+        height: 50px;
+        margin: 20px auto 0;
+        background: #fff;
+        border-radius: 2px 0 0 2px;
+        font-size: 2.1rem;
+        text-indent: 0;
+        color: #00b5d8;
+        line-height: 50px;
+    }
+    
+    /* knowhow */
+    
+    #knowhow {
+        padding: 75px 0 76px;
+        background: #f4f4f4 url(../img/cjw-bg-foodKnowhow.jpg) no-repeat right bottom/contain;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+
+

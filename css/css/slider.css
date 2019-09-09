@@ -1,0 +1,179 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	text-align: center;
+}
+
+h1, h2 {
+	margin: 50px;
+}
+
+section {
+	margin: 50px 0;
+}
+
+
+/* .slideshow */
+
+.slideShow {
+	position: relative;
+	width: 1200px;
+	height: 510px;
+	margin: 0 auto;
+}
+
+.slideShow img {
+	width: 1200px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.slideShow img:nth-child(1) ~ img {
+	display: none;
+}
+
+
+/* click Slide */
+
+.sec02 {
+	width: 1000px;
+	margin: 0 auto;
+}
+.sec02::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.sec02 div {
+	float:left;
+}
+
+.clickSlide {
+	width: 500px;
+	height: 500px;
+	position: relative;
+	
+}
+
+.clickSlide a {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.clickSlide a:nth-child(1)~a{
+	display: none;
+}
+
+/* bg slider */
+
+.bgSlider {
+	width: 1200px;
+	height: 510px;
+	margin: 0 auto;
+	background-image: url(../img/main1.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+/* bx slider */
+
+.bx-wrapper {
+	border: none;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	margin: 0 auto;
+}
+
+.bx-wrapper .bx-controls-auto, .bx-wrapper .bx-pager {
+	bottom: 10px;
+}
+
+	
+	/* slick */
+	
+.slick-slide {
+	margin: 10px;
+}
+
+
+.slick-slide div > div {
+	background-image: url(../img/subCont1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 150px;
+}
+	
+.slick-slide > div > div.img2 {
+	background-image: url(../img/subCont2.jpg);
+
+}	
+
+.slick-slide > div > div.img3 {
+	background-image: url(../img/subCont3.jpg);
+
+}	
+
+.slick-slide > div > div.img4 {
+	background-image: url(../img/subCont4.jpg);
+
+}	
+
+.slick-slide > div > div.img5 {
+	background-image: url(../img/subCont5.jpg);
+
+}	
+
+.slick-slide > div > div.img6 {
+	background-image: url(../img/subCont6.jpg);
+
+}	
+
+.slick-slide > div > div.img7 {
+	background-image: url(../img/subCont7.jpg);
+
+}	
+
+
+
+
+
+
+
+.slick-prev:before, .slick-next:before {
+	color: black;
+	font-size: 35px;
+}
+
+.slick-prev, .slick-next {
+	top: -25px
+}
+
+.slick-prev {
+	left: 12px;
+}
+.slick-next {
+	right: 12px;
+}
+
+.slick-dots li button:before {
+	font-size: 45px;
+	
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    margin: 20px 0;
+}
+
+div {
+    padding: 20px;
+    line-height: 1.5;
+}
+
+div>div{
+    padding: 0;
+}
+
+.div1 {
+    background: #8e51a8;
+}
+
+.div2 {
+    background: #472b74;
+}
+
+.div3 {
+    background: #919cd4;
+}
+
+/* mostly fluid */
+
+/* lte 768px~ */
+
+@media screen and (min-width: 768px){
+    .mf .div2, .mf .div3 {
+        float: left;
+        width: 50%;
+    }
+    
+    .mf::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+
+/* column drop */
+
+/* lte 768px~ */
+
+@media screen and (min-width: 768px){
+    .cd .div1, .cd .div2 {
+        float: left;
+        height: 180px;
+        width: 50%;
+    }
+    .cd .div3 {
+        clear:both;
+    }
+}
+
+/* lte 1024px~ */
+
+@media screen and (min-width: 1024px){
+    .cd .div1, .cd .div2, .cd .div3 {
+        width: 33.333%;
+        height: 200px;
+    }
+    .cd .div3 {
+        float: left;
+    }
+    .cd .div3 {
+        clear: none;
+    }
+}
+
+/* layout shifter */
+
+/* lte 768px ~*/
+
+@media screen and (min-width: 768px){
+    .ls .div1, .ls .wrap {
+        float: left;
+    }
+    
+    .ls::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    
+    .ls .div1{
+        width: 30%;
+    }
+    
+    .ls .wrap {
+        width: 70%;
+    }
+}
+
+
+
+
+

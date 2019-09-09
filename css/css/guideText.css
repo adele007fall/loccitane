@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+* {margin:0;padding: 0;list-style-type: none;box-sizing: border-box;}
+a {text-decoration: none; color: #bcbcbc;}
+
+body {text-align: center;}
+h1, h2 {margin: 20px 0;}
+ul {width: 400px; margin: 0 auto;}
+ul:after {content: ""; display: block; clear: both;}
+ul > li {float: left;width: 200px;}
+ul > li > a {display: block; padding: 15px;border: 1px solid #bcbcbc;font-weight: bold;}
+
+ul > li > a.active {background: #000; color: #fff;}
+div {width: 400px; height: 40px; margin: 10px auto;}
+div input {width: 400px; height: 40px; text-indent: 10px;}
+div input::placeholder {color: #bcbcbc; text-indent: 10px;}
+div textarea {width: 400px; height: 40px; padding: 10px;color: #000;}
+button {width: 400px; height: 50px; margin-bottom: 20px; background: #000; color: #fff; font-weight: bold; font-size: 1.1rem;}
+
+.gt div a:after {content: "|"; padding: 0 20px;}
+.gt div a:last-child:after {content: none;}
+
+.guide {color: #bcbcbc;}
+
+.search:after {content: ""; display: block; clear: both;}
+.search {width: 400px;margin: 0 auto;}
+.search div {float: left; width: 350px; margin: 0;}
+.search input[type=search] {width: 350px;height: 40px;}
+.search button {float: right; width: 50px; height: 40px; font-weight: normal; font-size: 0.5rem;}

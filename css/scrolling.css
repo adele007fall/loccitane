@@ -1,0 +1,174 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #bcbcbc;
+}
+
+header {
+	background: black;
+    opacity: 0.8;
+	left: 0;
+	top: 0;
+	width: 100%;
+	transition-delay: 300ms;
+    position: fixed;
+}
+
+h1 {
+	float: left;
+	width: 150px;
+	padding-left: 100px;
+	line-height: 50px;
+    
+}
+
+h1 img {
+	width: 150px;
+    
+}
+
+header::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+
+nav ul {
+	margin-left: 300px;
+}
+
+nav ul > li {
+	display: inline-block;
+}
+
+nav ul a{
+	padding: 0 50px;
+	text-transform: uppercase;
+	line-height: 50px;
+}
+
+nav ul > li > a:hover, nav ul > li > a:active, nav ul > li.active > a {
+	color: violet;
+}
+
+section{
+	background: url(../img/Retriever.jpg) no-repeat center/cover;
+	height: 800px;
+}
+
+
+section h2 {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}/*blind 처리한 h2 ㅜㅡ...*/
+
+.inner {
+	width: 960px;
+    height: 740px;
+	margin: 0 auto;
+    padding-top: 80px;
+}
+
+section:nth-of-type(2) {
+	background-image: url(../img/gucci-01.jpg);
+}
+
+section:nth-of-type(3) {
+	background: lightgray;
+}
+
+section:nth-of-type(4) {
+	background-image: url(../img/gucci-13.jpg);
+}
+
+section:nth-of-type(3)> div > div {
+	float: left;
+	width: 300px;
+	height: 200px;
+	margin: 10px;
+	background: url('../img/insta1.jpg') no-repeat center;
+	background-size: cover;
+}
+
+section:nth-of-type(3)> div::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+section:nth-of-type(3)> div > div >  a {
+	display: block;
+	height: 300px;
+}
+
+section:nth-of-type(3)> div > div:nth-of-type(2) {
+	background-image: url('../img/insta2.jpg');
+}
+
+section:nth-of-type(3)> div > div:nth-of-type(3) {
+	background-image: url('../img/insta3.jpg');
+}
+
+section:nth-of-type(3)> div > div:nth-of-type(4) {
+	background-image: url('../img/insta4.jpg');
+}
+
+section:nth-of-type(3)> div > div:nth-of-type(5) {
+	background-image: url('../img/insta5.jpg');
+}
+section:nth-of-type(3)> div > div:nth-of-type(6) {
+	background-image: url('../img/insta6.jpg');
+}
+
+section:nth-of-type(3)> div > div:nth-of-type(7) {
+	background-image: url('../img/insta7.jpg');
+}
+
+section:nth-of-type(3)> div > div:nth-of-type(8) {
+	background-image: url('../img/insta8.jpg');
+}
+
+section:nth-of-type(3)> div > div:nth-of-type(9) {
+	background-image: url('../img/insta9.jpg');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

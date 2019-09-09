@@ -1,0 +1,883 @@
+@charset "utf-8";
+
+/* font */
+
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+
+@font-face {
+    font-family: nbgR;
+    src: url(font/NanumBarunGothic.eot?#iefix) format('embedded-opentype');
+    src: url(font/NanumBarunGothic.woff) format('woff') ;
+}
+
+/* reset */
+
+* {
+    list-style: none;
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clear {
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    border: none;
+    background: none;
+    text-indent: -9999px;
+    cursor: pointer;
+}
+
+img {
+    border: none;
+}
+
+body {
+    font-family: Arial, "맑은 고딕", sans-serif;
+    line-height: 1;
+}
+
+
+.blind {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+html {
+    font-size: 0.625em;
+}
+
+/* header */
+
+.navWrap {
+	position: fixed;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	
+}
+
+.navWrap > div  {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: #ffcc00;
+    z-index: 11;
+}
+
+h1 {
+    position: absolute;
+    width: 130px;
+    left: 50%;
+    margin: 13px 0 0 -65px;
+    z-index: 12;
+}
+
+h1 img {
+    width: 100%;
+}
+
+.mobileHide {
+    display: none;
+}
+
+svg {
+    position: absolute;
+    top: 17px;
+    right: 5.333%;
+    width: 26px;
+    height: 16px;
+    display: inline-block;
+}
+
+path {
+    fill: #09203e;
+}
+
+button.icon_cancel svg path{
+    fill: #09203e;
+}
+
+.down_arrow svg{
+    position: absolute;
+    display: inline-block;
+    top: 555px;
+    right: ;
+}
+
+/* nav */
+
+.menuOn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #e0e0e0 url(../img/pattern.png) repeat;
+    background-blend-mode: multiply;
+	z-index: 11;
+	
+	/* display: none */
+} 
+/* menuOn 을 하면 wrapNav가 사라진다. */
+
+
+
+
+.menuOnHide {
+	display: block;
+}
+
+/*
+
+footer 부분의 로고
+
+*/
+
+/* .menuOnHide 을 하면 content footerLink 가 사라짐 */
+
+.bg_beige{
+    position: absolute;
+    top: 50px;
+    left: 13.333%;
+    background: #fceccd;
+    width: 73.333%;
+    height: 510px;
+    text-align: center;
+}
+
+.accordion:first-of-type {
+	padding-top: 60px;
+}
+.accordion {
+	margin-bottom: 10px;
+}
+
+.accordion a {
+	font-weight: 700;
+	font-size: 1.5rem;
+	color: #1d2b5a;
+    position: relative;
+}
+
+.accordion a:hover  {
+	color: #ee8623;
+}
+
+.accordion a:hover::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	left: 0;
+	bottom: -4px;
+	background: #ee8623;
+}
+
+.showOnTab {
+    display: none;
+}
+
+.panel {
+	display: none;
+    overflow: hidden;
+}
+
+
+
+.pandel li:first-of-type {
+	margin-top: 16px;
+}
+.menuOn li {
+    color: #1d2b5a;
+    font-size: 0.9rem;
+    margin-bottom: 0.9rem;
+}
+
+.menuOn li:last-of-type {
+    margin-bottom: 11px;
+}
+
+.menuOn ul li a {
+    display: inline-block;
+    color: #1d2b5a;
+    position: relative;
+}
+
+.menuOn ul li:hover a {
+    color: #ee8623;
+}
+
+.menuOn ul li:hover a::after {
+    content: "";
+    background: #ee8623;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 2px;
+    
+}
+
+.menuOn > div:last-of-type {
+    position: absolute;
+    display: none;
+}
+
+.menuOn > div:last-of-type small {
+	width: 100%;
+}
+
+
+.wrapNav {
+    display: none;
+}
+
+#content {
+    margin: 0 auto;
+}
+
+.visual {
+    width: 100%;
+    height: 625px;
+    position: relative;
+    background: url(../img/bg_main.jpg) no-repeat center/cover;
+}
+
+.visual div {
+    position: absolute;
+    width: 62.4%;
+    height: 311px;
+    background: #fff;
+    left: 50%;
+    margin: 150.5px 0 0 -31.2%;
+    text-align: center;
+}
+
+.visual div::after{
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 3px solid #ffcc00;
+}
+
+.visual b {
+    display: inline-block;
+    width: 45.866%;
+    margin: 40px 0 30px 0;
+    font-size: 1.7rem;
+    color: #363023;
+}
+
+.visual p {
+    font-size: 1.2rem;
+    margin-bottom: 7px;
+    color: #403929;
+}
+
+.visual p:nth-of-type(4) {
+    margin-bottom: 18px;
+}
+
+/* products */
+
+.products {
+    position: relative;
+    width: 100%;
+    height: 575px;
+    background: #fff;
+}
+
+.products > div:first-of-type {
+    position: absolute;
+    width: 91.2%;
+    height: 500px;
+    margin-top: 29px;
+    background: #1d2b5a url(../img/pattern.png) repeat;
+    background-blend-mode: overlay;
+}
+
+.products > div > div {
+    position: absolute;
+    margin-top: 54px;
+    width: 100%;
+    height: 400px;
+    border: none;
+    background: url(../img/cont_product1.jpg) no-repeat center/cover;
+}
+
+.products > div >div::after{
+    content: "";
+    position: absolute;
+    top: 4.5px;
+    left: 4.5px;
+    right: 4.5px;
+    bottom: 4.5px;
+    border: 3px solid #ffcc00;
+}
+
+.products > div > div >div {   
+    position: absolute;
+    top: 240px;
+    right: 0;
+    width: 44%;
+    height: 200px;
+    background: #fceccd;
+    text-align: center;
+    z-index: 1;
+    
+}
+
+.products b {
+    display: inline-block;
+    margin: 28px 0 21px;
+    font-size: 1.4rem;
+    color: #1d2b5a;
+}
+
+.products p {
+    margin-bottom: 6.5px;
+    font-size: 1.2rem;
+    color: #403929;
+}
+
+.products div div div::before{
+    content: "";
+    position: absolute;
+    top: 4.5px;
+    left: 4.5px;
+    right: 4.5px;
+    bottom: 4.5px;
+    border: 3px solid #0a213d;
+}
+
+.products a {
+    position: relative;
+    display: inline-block;
+    width: 51.515%;
+    height: 22px;
+    line-height: 22px;
+    margin-top: 20px;
+    background: #1d2b5a;
+    color: #ffcc00;
+    
+}
+
+.products a:hover{
+    background: #ffcc00;
+    color: #1d2b5a;
+    transition-duration: background-color .3s cubic-bezier(.75,0,.2,1);
+}
+
+/*
+.products div div span:last-of-type {
+    display: inline-block;
+    width: none;
+    height: 22px;
+    line-height: 22px;
+    margin-top: 20px;
+    background: black;
+    
+}
+
+
+.products > div > div >div:hover span {   
+    background: #000;
+}
+
+*/
+
+/* story */
+
+.story {
+    width: 100%;
+    height: 575px;
+    position: relative;
+    background: #fff;
+}
+
+.story > div:first-of-type {
+    position: absolute;
+    width: 88.8%;
+    height: 500px;
+    background: url(../img/cont_bg.jpg) no-repeat center/cover;
+}
+
+.story > div:nth-of-type(2) {
+    position: absolute;
+    width: 100%;
+    height: 387px;
+    border: none;
+    margin-top: 26px;
+    background: url(../img/cont_provence.png) no-repeat center/cover;
+}
+
+.story > div:nth-of-type(2)::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 3px solid #ffcc00;
+}
+
+
+.story > div:nth-of-type(2) > div {
+    position: absolute;
+    top: 374px;
+    width: 82.666%;
+    height: 157px;
+    background: #fff2bc url(../img/pattern.png) repeat;
+    background-blend-mode: multiply;
+    text-align: center;
+    z-index: 1;
+}
+
+.story > div:nth-of-type(2) div::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 3px solid #1d2b5a;
+}
+
+.story b {
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: #1c2a5b;
+    margin-top: 23px;
+    margin-bottom: 13px;
+}
+
+.story p {
+    font-size: 1.2rem;
+    color: #403929;
+    margin-bottom: 4px;
+}
+
+.story a {
+    position: relative;
+    display: inline-block;
+    width: 27.419%;
+    height: 22px;
+    line-height: 22px;
+    margin-top: 12px;
+    background: #1d2b5a;
+    color: #ffcc00;
+}
+
+/* spa */
+
+.spa {
+    width: 100%;
+    height: 575px;
+    position: relative;
+    background: #fff;
+}
+
+.spa > div {
+    width: 100%;
+    height: 465px;
+    position: absolute;
+    background: url(../img/cont_spa.jpg) no-repeat center/cover;
+}
+
+.spa > div > div {
+    width: 74.8%;
+    height: 124px;
+    position: absolute;
+    top: 430px;
+    right: 4%;
+    background: #e0e0e0 url(../img/pattern.png) repeat;
+    background-blend-mode: multiply;
+    text-align: center;
+    z-index: 1;
+}
+
+.spa > div::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 3px solid #1d2b5a;
+}
+
+.spa > div div div::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 3px solid #1d2b5a;
+}
+
+.spa b {
+    display: inline-block;
+    color: #363023;
+    font-size: 1.4rem;
+    margin-top: 25px;
+    margin-bottom: 18px;
+}
+
+.spa p {
+    color: #363023;
+    font-size: 1.2rem;
+}
+
+.spa a {
+    position: relative;
+    margin-top: 20px;
+    display: inline-block;
+    color: #ffcc00;
+    background: #1d2b5a;
+    width: 30.249%;
+    height: 22px;
+    line-height: 22px;
+}
+
+/* gift */
+
+.gift {
+    position: relative;
+    width: 100%;
+    height: 575px;
+    background: #f7f7f7;
+}
+
+.gift::before {
+    content: "";
+    position: absolute;
+    top: 38px;
+    left: 38px;
+    right: 38px;
+    bottom: 38px;
+    border: 3px solid #ffcc00;
+}
+
+.gift .left {
+    float: left;
+    width: 100%;
+    height: 325px;
+    background: url(../img/loccitane_paperbag2.jpg) no-repeat center/contain;
+    background-blend-mode: screen;
+    z-index: 2;
+}
+
+.gift .right {
+    float: right;
+    width: 100%;
+    height: 250px;
+    background: #09203e url(../img/pattern.png) repeat;
+    background-blend-mode: overlay;
+}
+
+
+.gift .right div {
+    margin-top: 31px;
+    width: 73.333%;
+    margin-left: 13.666%;
+}
+
+.gift b {
+    font-size: 1.4rem;
+    color: #ffcc00;
+    display: inline-block;
+    margin-bottom: 27px;
+}
+
+.gift p {
+    font-size: 1.2rem;
+    color: #f5f1e5;
+}
+
+.gift p:nth-of-type(2) {
+    margin-top: 17px;
+}
+
+.gift a {
+    display: inline-block;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 48.4%;
+    text-align: center;
+    width: 22.666%;
+    height: 22px;
+    line-height: 22px;
+    background: #ffcc00;
+    color: #09203e;
+}
+
+/* find */
+
+.find {
+    position: relative;
+    width: 100%;
+    height: 575px;
+}
+
+.find::before {
+    content: "";
+    position: absolute;
+    top: 136px;
+    left: 15px;
+    right: 15px;
+    bottom: 136px;
+    border: 3px solid #ffcc00;
+}
+
+.find .left {
+    float: left;
+    width: 50%;
+    height: 575px;
+    background: url(../img/cont_store.jpg) no-repeat center/cover;
+}
+
+.find .right {
+    float: right;
+    width: 50%;
+    margin-top: 105px;
+    height: 365px;
+    text-align: center;
+    background: #f7f7f7;
+}
+
+.find b {
+    display: inline-block;
+    font-size: 1.4rem;
+    margin-top: 78px;
+    margin-bottom: 62px;
+    color: #363023;
+}
+
+.find p {
+    font-size: 1.2rem;
+}
+
+.find p:last-of-type {
+    margin-top: 14px;
+    margin-bottom: 85px;
+}
+
+.find a {
+    display: inline-block;
+    position: absolute;
+    right: 14%;
+    bottom: 175px;
+    width: 22.666%;
+    height: 22px;
+    line-height: 22px;
+    background: #ffcc00;
+    color: #09203e;
+}
+
+/*  footer */
+
+.footer {
+    position: relative;
+    background: #ffcc00;
+    width: 100%;
+    height: 110px;
+}
+
+.footerLink::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    border-top: 3px solid #09203e;
+}
+
+.footerLink1 {
+    padding-top: 11px;
+    text-align: center;
+}
+.footer p {
+    font-size: 0.6rem;
+    margin-bottom: 5px;
+}
+
+.footer small {
+    margin-top: 4px;
+    display: inline-block;
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+h4 {
+    position: absolute;
+    width: 130px;
+    left: 50%;
+    margin: 13px 0 0 -65px;
+    z-index: 30;
+}
+
+h4 img {
+    width: 100%;
+}
+
+
+/* 768px~ */
+
+
+
+@media screen and (min-width: 768px){
+    
+    body {
+        font-family: 'Spoqa Han Sans', 'Sans-serif';
+    }
+    
+    .navWrap > div {
+        height: 100px;
+    }
+    
+    h1 {
+        width: 258px;
+        margin: 22px 0 0 -129px;
+    }
+    
+    svg {
+        top: 34px;
+        right: 2.734%;
+        width: 52px;
+        height: 32px;
+    }
+    
+    /* nav */
+    
+    
+    /*
+    .menuOnShow {
+        margin-top: 763px;
+    }
+
+    footer 부분의 로고
+
+    */
+    
+    /* .menuOnHide 을 하면 content footerLink 가 사라짐 */
+    
+    .bg_beige{
+        top: 143px;
+        left: 5.078%;
+        width: 89.843%;
+        height: 232px;
+        position: relative;
+    }
+
+    /* accordion */
+    
+    
+    .accordion {
+        display: none;
+    }
+
+    .gallery {
+        position: relative;
+        width: 100%;
+        height: 320px;
+        margin-top: 375px;
+    }
+	
+	.gallery span {
+		position: absolute;
+		top: -232px;
+		left: 0;
+		display: block;
+		width: 100%;
+		height: 100%;
+		background: url(../img/bg_menu.jpg) no-repeat center/cover;
+	}
+    
+    
+    
+    .panel {
+        display: block;
+        overflow: hidden;
+        display: inline-block;
+        float: left;
+        width: 25%;
+    }
+    
+    .showOnTab {
+        display: block;
+    }
+    
+    .panel li:first-of-type {
+        margin-top: 34px;
+        margin-bottom: 26px;
+        font-size: 2.4rem;
+    }
+    .menuOn li {
+        color: #1d2b5a;
+        font-size: 1.8rem;
+        margin-bottom: 14px;
+    }
+
+    .menuOn li:last-of-type {
+        margin-bottom: 11px;
+    }
+
+    .menuOn ul li a {
+        display: inline-block;
+        color: #1d2b5a;
+        position: relative;
+    }
+
+    .menuOn ul li:hover a {
+        color: #ee8623;
+    }
+
+    .menuOn ul li:hover a::after {
+        content: "";
+        background: #ee8623;
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        width: 100%;
+        height: 2px;
+
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
